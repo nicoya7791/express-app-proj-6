@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "Displays random famous quotes each time a button is clicked or at interval ",
+            "technologies": "",
+            "live_link": "",
+            "github_link": "",
+            "image_urls": [
+                {
+                    "medium": "",
+                    "large": ""
+                }
+            ]
+        }
+    ]
+}
