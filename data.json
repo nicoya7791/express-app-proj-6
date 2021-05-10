@@ -3,16 +3,82 @@
         {
             "id": "0",
             "project_name": "Random Quote Generator",
-            "description": "Displays random famous quotes each time a button is clicked or at interval ",
-            "technologies": "",
-            "live_link": "",
-            "github_link": "",
-            "image_urls": [
-                {
-                    "medium": "",
-                    "large": ""
-                }
-            ]
+            "description": "Displays random famous quotes each time a button is clicked or a set interval ",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "live_link": "link is pending",
+            "github_link": "https://github.com/nicoya7791/random-quote-generator.git",
+            "image_urls": {
+                "main": "/images\random-quotes.png",
+                "projectImg": "/images/random-quotes.png"
+            }
+        },
+        {
+            "id": "1",
+            "project_name": "Data Pagination and Filtering",
+            "description": "A file contains information for 42 students, including name, email, and picture. Using JavaScript skills will display the first nine students on the page. Then will add navigation, also known as pagination buttons, that the user can click to display different pages of students. ",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "live_link": "link is pending",
+            "github_link": "https://github.com/nicoya7791/project-two-pagination.git",
+            "image_urls": {
+                "main": "/images/data-pagination.png",
+                "projectImg": "/images/data-pagination.png"
+            }
+        },
+        {
+            "id": "2",
+            "project_name": "Interactive Form",
+            "description": "In this project, I use JavaScript to enhance an interactive registration form for a fictional Full Stack conference. Adding customized and conditional behavior and interactivity. Validating user input and providing helpful error messages when the user enters invalid information into the form fields. ",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "live_link": "link is pending",
+            "github_link": "https://github.com/nicoya7791/form-validation.git",
+            "image_urls": {
+                "main": "/images/form-validation.png",
+                "projectImg": "/images/form-validation.png"
+            }
+        },
+        {
+            "id": "3",
+            "project_name": "Phrase Hunter Game",
+            "description": "Word guessing game: 'Phrase Hunter.' Select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "live_link": "link is pending",
+            "github_link": "https://github.com/nicoya7791/phase-hunter-project.git",
+            "image_urls": {
+                "main": "/images/phrase-hunter.png",
+                "projectImg": "/images/phrase-hunter.png"
+            }
+        },
+        {
+            "id": "4",
+            "project_name": "Public API Request",
+            "description": "Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees,” and use that data to build a prototype for an Awesome Startup employee directory. ",
+            "technologies": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "live_link": "link is pending",
+            "github_link": "https://github.com/nicoya7791/project5API.git",
+            "image_urls": {
+                "main": "/images/employee-api.png",
+                "projectImg": "/images/employee-api.png"
+            }
         }
     ]
 }
