@@ -11,10 +11,10 @@
             ],
             "live_link": "link is pending",
             "github_link": "https://github.com/nicoya7791/random-quote-generator.git",
-            "image_urls": {
-                "main": "/images\random-quotes.png",
-                "projectImg": "/images/random-quotes.png"
-            }
+            "image_urls": [
+                "/images\random-quotes.png",
+                "/images/random-quotes2.png"
+            ]
         },
         {
             "id": "1",
@@ -27,10 +27,10 @@
             ],
             "live_link": "link is pending",
             "github_link": "https://github.com/nicoya7791/project-two-pagination.git",
-            "image_urls": {
-                "main": "/images/data-pagination.png",
-                "projectImg": "/images/data-pagination.png"
-            }
+            "image_urls": [
+                "/images/data-pagination.png",
+                "/images/data-pagination2.png"
+            ]
         },
         {
             "id": "2",
@@ -43,10 +43,11 @@
             ],
             "live_link": "link is pending",
             "github_link": "https://github.com/nicoya7791/form-validation.git",
-            "image_urls": {
-                "main": "/images/form-validation.png",
-                "projectImg": "/images/form-validation.png"
-            }
+            "image_urls": [
+                "/images/form-validation.png",
+                "/images/form-validation2.png",
+                "/images/form-validation3.png"
+            ]
         },
         {
             "id": "3",
@@ -59,10 +60,11 @@
             ],
             "live_link": "link is pending",
             "github_link": "https://github.com/nicoya7791/phase-hunter-project.git",
-            "image_urls": {
-                "main": "/images/phrase-hunter.png",
-                "projectImg": "/images/phrase-hunter.png"
-            }
+            "image_urls": [
+                "/images/phrase-hunter.png",
+                "/images/phrase-hunter2.png",
+                "/images/phrase-hunter3.png"
+            ]
         },
         {
             "id": "4",
@@ -75,10 +77,11 @@
             ],
             "live_link": "link is pending",
             "github_link": "https://github.com/nicoya7791/project5API.git",
-            "image_urls": {
-                "main": "/images/employee-api.png",
-                "projectImg": "/images/employee-api.png"
-            }
+            "image_urls": [
+                "/images/employee-api.png",
+                "/images/employee-api2.png"
+            ]
         }
-    ]
+    ],
+    "profile": "/images/profile2.jpg"
 }

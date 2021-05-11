@@ -1,25 +1,30 @@
 const express = require('express');
 const path = require('path');
-const cookieParser = require('cookie-parser');
-
+const { projects } = require('./data/data.json');
+const port = process.env.port || 3000;
 /* Instantiate Express app */
 const app = express();
 
-app.use(cookieParser());
 /* Setup view engine, we are using pug templates*/
-//app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // url encoded parser
 app.use(express.urlencoded({ entended: false }));
-// app.use(cookieParser()); not sure if i need cookie parser yet.
 
 // sets the public folder as static in the route 'static'
-app.use('/static', express.static('public'));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // root route need to test
 app.get('/', (req, res) => {
-    res.send('hello from root route');
+    console.log(projects[0]);
+    res.render('index', projects);
 });
 
-app.listen(3000);
+// about page route 
+app.get('/about', (req, res) => {
+
+    res.render('about');
+});
+
+
+app.listen(port);
