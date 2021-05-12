@@ -17,5 +17,23 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
+// error display when a page is not found or does not exist.
+app.use((req, res, next) => {
+    const err = new Error('The found Monkeys in Mars!. And the page you are looking for does not exist.');
+    err.status = 404;
+    next(err);
+});
 
-app.listen(port);
+// Error handler
+app.use((err, req, res, next) => {
+    // set local var error = err
+    res.locals.error = err;
+    res.status(err.status);
+
+    // render an error templet.
+    res.render('error');
+});
+
+app.listen(port, () => {
+    console.log('The app is running in local host 3000')
+});
