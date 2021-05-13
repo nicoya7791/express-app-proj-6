@@ -19,7 +19,7 @@ app.use(routes);
 
 // error display when a page is not found or does not exist.
 app.use((req, res, next) => {
-    const err = new Error('More likely to find Monkeys in Mars than the page your are looking for.');
+    const err = new Error('Monkeys in space!');
     err.status = 404;
     next(err);
 });
