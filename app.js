@@ -19,19 +19,21 @@ app.use(routes);
 
 // error display when a page is not found or does not exist.
 app.use((req, res, next) => {
-    const err = new Error('The found Monkeys in Mars!. And the page you are looking for does not exist.');
+    const err = new Error('More likely to find Monkeys in Mars than the page your are looking for.');
     err.status = 404;
     next(err);
 });
 
 // Error handler
 app.use((err, req, res, next) => {
-    // set local var error = err
-    res.locals.error = err;
-    res.status(err.status);
-
-    // render an error templet.
-    res.render('error');
+    if (err.status === 404) {
+        res.status(404)
+            .render('not-found', { err });
+    } else {
+        err.message = 'Something went wrong!';
+        res.status(err.status || 500);
+        res.render('error', { err });
+    }
 });
 
 app.listen(port, () => {
