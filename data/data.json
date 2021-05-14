@@ -13,7 +13,8 @@
             "github_link": "https://github.com/nicoya7791/random-quote-generator.git",
             "image_urls": [
                 "/static/images/random-quotes.png",
-                "/static/images/random-quotes2.png"
+                "/static/images/random-quotes2.png",
+                "/static/images/random-quotes3.png"
             ]
         },
         {
@@ -29,6 +30,7 @@
             "github_link": "https://github.com/nicoya7791/project-two-pagination.git",
             "image_urls": [
                 "/static/images/data-pagination.png",
+                "/static/images/data-pagination2.png",
                 "/static/images/data-pagination2.png"
             ]
         },
@@ -80,6 +82,7 @@
             "github_link": "https://github.com/nicoya7791/project5API.git",
             "image_urls": [
                 "/static/images/employee-api.png",
+                "/static/images/employee-api2.png",
                 "/static/images/employee-api2.png"
             ]
         }
