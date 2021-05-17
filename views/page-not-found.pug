@@ -1,15 +1,14 @@
-extends layout.pug
+extends layout.pug 
 
-block content   
+block content 
   nav.nav
     a(href='/')
       span &larr;
       |  Back
 
-    h1 #{err.message}
-    h2= err.status
-    pre= err.stack
-
+    h1 Erro 404- page not found!
+    h2 #{err.message}
+    
   nav.nav
     a(href='/')
       span &larr;

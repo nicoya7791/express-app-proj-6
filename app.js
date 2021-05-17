@@ -27,8 +27,10 @@ app.use((req, res, next) => {
 // Error handler
 app.use((err, req, res, next) => {
     if (err.status === 404) {
+        console.log(err.message);
+
         res.status(404)
-            .render('not-found', { err });
+            .render('page-not-found', { err });
     } else {
         err.message = 'Something went wrong!';
         res.status(err.status || 500);

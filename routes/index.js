@@ -20,16 +20,15 @@ router.get('/projects/:id', (req, res, next) => {
     const { id } = req.params;
     // find a project in projects array with id === to id passed in the route. example: '/projects/1' return project index 1.
     const project = projects[id]
-    res.render('project', { project });
+    if (project) {
+        res.render('project', { project });
+    } else {
+        const err = new Error('Project does not exist');
+        console.log('Project not Found');
+        err.status = 404;
+        next(err);
+    }
 });
-
-//- each project in projects         
-//- a.(href=`/project/${id}`)
-//- img.thumbnail(src=`${project.image_url}`)
-
-
-
-
 
 
 module.exports = router;
