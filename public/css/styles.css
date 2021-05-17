@@ -363,7 +363,7 @@ nav a span {
   }
 }
 /* customized cdd */
-body{
+body {
   background: #033245;
 }
 .sidebar {
@@ -377,19 +377,23 @@ body{
 }
 .portfolio-intro h1{
   font-family: 'Sacramento', cursive;
+
 }
-.box, .inner-wrapper, .portfolio-intro, .wrapper{
+.box, .inner-wrapper, .portfolio-intro{
   background:#faf5e1 ;
+  color: #cb4b16;
+}
+.wrapper h5{
+  background:#faf5e1 ;
+
 }
 .nav{
   background:#27a198 ;
 }
-/* .portfolio-intro, .wrapper{ */
-  /* background:#faf5e1 ; */
+.cell img{
+  box-shadow:1px 1px 2px 5px #4daf7c;
+}
+.cell h5{
+  color: #cb4b16;
 
-/* } */
-/* .about-intro-box{ */
-  /* background:#faf5e1 ; */
-/*  */
-/* } */
-/* i change the max-with to 1500. the lay out was not working ok on my computer. I Had a with space on the right*/
+}
