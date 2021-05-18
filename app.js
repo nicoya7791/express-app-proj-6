@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
-//const { routes } = require('./routes');
 const port = process.env.port || 3000;
 const routes = require('./routes');
+
 /* Instantiate Express app */
 const app = express();
 
@@ -13,6 +13,7 @@ app.set('view engine', 'pug');
 app.use(express.urlencoded({ entended: false }));
 
 // sets the public folder as static in the route 'static'
+// __dirname is an environment variable that tells you the absolute path of the directory containing the currently executing file.
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
@@ -24,7 +25,7 @@ app.use((req, res, next) => {
     next(err);
 });
 
-// Error handler
+// Error handler for a 404 status or anything else
 app.use((err, req, res, next) => {
     if (err.status === 404) {
         console.log(err.message);
