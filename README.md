@@ -19,4 +19,9 @@
   - added box shadow 
   - h5 text color changed to #cb4b16
 
+##  Additional Features:
+* You can run the app by running 'npm start' or 'node app.js'. If you have nodemon install you can run it with 'nodemon'
+* Customize error template, and page-not-found tamplates. 
+
+
 
