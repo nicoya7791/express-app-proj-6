@@ -2,16 +2,13 @@ extends layout.pug
 
 block content
   article.portfolio-intro
-    //- landing page heading 
     h1 Full-Stack Developer Student Portfolio 
 
-    //-  Brief desciption of the project
     p This page showcases my journey through <a href='https://teamtreehouse.com/home' target='_blank'>teamtreehouse.com</a> Tech Degree program. My goal is to turn my Student Portfolio into my real project portfolio.
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-      //- for each project in projects array create a link provide an image, and project name
       each project in projects 
         .cell 
           a(href=`/projects/${project.id}`) 
